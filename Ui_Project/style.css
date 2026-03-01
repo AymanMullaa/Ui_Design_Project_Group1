@@ -1,0 +1,447 @@
+:root {
+  --bg: rgb(243, 243, 243) ;           /* Background */
+  --card: #ffffff9e;         /* Card surface */
+  --text-main: #1E293B;    /* Main text */
+  --text-secondary: #64748B; /* Secondary text */
+  --primary: #080808;      /* Headings / Nav */
+  --primary-hover: #2563EB;/* Accent hover */
+  --border: #777777;       /* Borders */
+} 
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+.dark {
+    background-color: #2b2a2a;
+    color: #f0f0f0;
+}
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+
+.card-dark {
+    background: #202020;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+.card-dark {
+  margin-bottom: 30px;
+}
+
+nav {
+  background-color: var(--card);
+  padding: 15px 20px;
+
+}
+nav a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.navbar{
+  background: #000000;   /* or use your page color */
+  padding: 12px 20px;
+}
+
+/* remove default spacing */
+.nav-links{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.page-header {
+  color: #ffffff;
+  margin: 40px 10px;
+  background-color: #085026;
+  padding: 100px 100px 100px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(29, 78, 216, 0.08);
+  
+}
+.page-header-dark {
+  color: #ffffff;
+  margin: 40px 10px;
+  background-color: #128f46;
+  padding: 100px 100px 100px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(29, 78, 216, 0.08);
+  
+}
+.container{
+    border-radius: 12px;
+    max-width: 2500px;   /* controls page width */
+    margin: 0 auto;      /* centers horizontally */
+    padding: 40px 20px;
+}
+.container {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.container-different {
+    max-width: 3500px;   /* controls page width */
+    margin: 0 auto;      /* centers horizontally */
+    padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;      /* 40px */
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;        /* 32px */
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;      /* 24px */
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;     /* 20px */
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;        /* 16px */
+  line-height: 1.6;
+}
+
+.table-wrapper {
+  max-width: 1100px;
+  margin: 40px auto;
+  border-radius: 14px;
+  overflow: hidden;           /* VERY IMPORTANT */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  background: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;  /* CHANGE THIS */
+  border-spacing: 0;
+  margin-bottom: 30px;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #128f46;
+  color: #eeeded;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+}
+.navbar {
+  background: #2b2a2a; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.btn-primary {
+  background-color: #085026;   /* deep green */
+  padding: 24px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color:#259955;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(6, 95, 70, 0.2);
+}
+
+.btn-primary-dark {
+  background-color: #085026;   /* deep green */
+  padding: 24px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Container for the 3 cards */
+.info-cards {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Individual card */
+.small-card {
+  background: white;
+  padding: 100px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+/* Title inside card */
+.small-card h4 {
+  font-size: 0.95rem;
+  color: #64748B;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Value inside card */
+.small-card p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #065F46;
+  margin: 0;
+}
+
+
+.info-cards-dark {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Individual card */
+.small-card-dark {
+  background: #202020;
+  padding: 100px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+/* Title inside card */
+.small-card-dark h4 {
+  font-size: 0.95rem;
+  color: #6a6e6e;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Value inside card */
+.small-card-dark p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #13a751;
+  margin: 0;
+}
+
+thead th:first-child {
+  border-top-left-radius: 12px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 12px;
+}
+
+.topics-list {
+  max-width: 900px;
+  margin: 40px auto;
+  padding-right : 1500px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.topics-list li {
+  color: #080808;
+  background: #13a751;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+}
+.topics-list-ar li {
+  color: #080808;
+  background: #13a751;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+}
+
+
+.topics-list-dark li {
+  color: #ffffff;
+  background: #13a751;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+}
+
+.info-cards-left {
+  padding-right : 1500px ;
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+a {
+  color: #07445c;
+}
+
+.btn-primary-reference{
+  background-color: #f5f5f5;   /* deep green */
+  padding: 24px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-reference:hover {
+  background-color:#259955;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(6, 95, 70, 0.2);
+}
+
+
+
+.references-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #F8FAFC;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1E293B;
+  margin-bottom: 30px;
+}
+
+.reference-card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.book-title {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #065F46;
+  text-decoration: none;
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+}
+
+.book-title:hover {
+  text-decoration: underline;
+  color: #047857;
+}
+
+.book-content img {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+
+
+.site-footer {
+  background-color: #F1F5F9;
+  padding: 20px 40px;
+  margin-top: 60px;
+  border-top: 1px solid #E2E8F0;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #64748B;
+}
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  gap: 12px;
+  padding: 15px 20px;
+}
+
+.btn-primary-dark {
+  text-decoration: none;
+  background: #128f46;  /* your gold color */
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-primary-dark:hover {
+  background: #07411f;
+}
+
+.navbar-light {
+  background: #f5f4f4; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
