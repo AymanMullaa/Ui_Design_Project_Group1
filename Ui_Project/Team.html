@@ -1,81 +1,147 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team Page | صفحة الفريق</title>
+<meta charset="UTF-8">
+<title>Team Page | صفحة الفريق</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
 
-  <link rel="stylesheet" href="style.css" />
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #1e293b;
+    color: white;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.card h3 {
+    margin: 0 0 15px;
+    font-size: 15px;
+    color: gray;
+}
+
+.info {
+    text-align: left;
+    font-size: 14px;
+}
+
+.info p {
+    margin: 8px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1e293b;
+    color: white;
+}
+</style>
 </head>
 
-<body class="light">
+<body>
 
-  <!-- Header using your existing class -->
-  <div class="container">
-    <header class="page-header">
-      <h1>Team Members | أعضاء الفريق</h1>
-      <p>Website Development Team - فريق تطوير الموقع</p>
-    </header>
-  </div>
+<header>
+<h1>Team Members | أعضاء الفريق</h1>
+<p>Website Development Team - فريق تطوير الموقع</p>
+</header>
 
-  <!-- Team cards -->
-  <main class="container">
-    <section class="team-grid">
+<section class="team-container">
 
-      <article class="card team-card">
-        <img class="team-avatar" src="member1.jpeg" alt="Ayman photo">
-        <h2>ايمن ملا</h2>
-        <p class="muted">Ayman Mulla</p>
-        <p><a href="mailto:s446002960@uqu.edu.sa">s446002960@uqu.edu.sa</a></p>
-        <p class="muted">ID: 446002960</p>
-      </article>
+<!-- Member 1 -->
+<div class="card">
+<img src="member1.jpeg" alt="Member Photo">
+<h2>ايمن ملا</h2>
+<h3>Ayman Mulla</h3>
+<h4>s446002960@uqu.edu.sa</h4>
+<h5>ID: 446002960</h5>
+</div>
 
-      <article class="card team-card">
-        <img class="team-avatar" src="member2.jpeg" alt="Muhanad photo">
-        <h2>مهند نحله</h2>
-        <p class="muted">Muhanad Nahla</p>
-        <p><a href="mailto:S44610500@uqu.edu.sa">S44610500@uqu.edu.sa</a></p>
-        <p class="muted">ID: 44610500</p>
-      </article>
+<!-- Member 2 -->
+<div class="card">
+<img src="member2.jpeg" alt="Member Photo">
+<h2>مهند نحله</h2>
+<h3>Muhanad Nahla</h3>
+<h4>S44610500@uqu.edu.sa</h4>
+<h5>ID: 44610500</h5>
+</div>
 
-      <article class="card team-card">
-        <img class="team-avatar" src="member3.jpeg" alt="Mazen photo">
-        <h2>مازن عطيه</h2>
-        <p class="muted">Mazn Ataih</p>
-        <p><a href="mailto:s446003719@uqu.edu.sa">s446003719@uqu.edu.sa</a></p>
-        <p class="muted">ID: 446003719</p>
-      </article>
+<!-- Member 3 -->
+<div class="card">
+<img src="member3.jpeg" alt="Member Photo">
+<h2>مازن عطيه</h2>
+<h3>Mazn Ataih</h3>
+<h4>s446003719@uqu.edu.sa</h4>
+<h5>ID: 446003719</h5>
+</div>
 
-      <article class="card team-card">
-        <img class="team-avatar" src="member4.jpg" alt="Member photo">
-        <h2>الاسم بالعربي</h2>
-        <p class="muted">Full Name</p>
-        <p><a href="mailto:email@uqu.edu.sa">University Email</a></p>
-        <p class="muted">ID</p>
-      </article>
+<!-- Member 4 -->
+<div class="card">
+<img src="member4.jpg" alt="Member Photo">
+<h2>الاسم بالعربي</h2>
+<h3>Full Name</h3>
+<h4>University Email</h4>
+<h5>ID</h5>
+</div>
 
-      <article class="card team-card">
-        <img class="team-avatar" src="member5.jpg" alt="Member photo">
-        <h2>الاسم بالعربي</h2>
-        <p class="muted">Full Name</p>
-        <p><a href="mailto:email@uqu.edu.sa">University Email</a></p>
-        <p class="muted">ID</p>
-      </article>
+<!-- Member 5 -->
+<div class="card">
+<img src="member5.jpg" alt="Member Photo">
+<h2>الاسم بالعربي</h2>
+<h3>Full Name</h3>
+<h4>University Email</h4>
+<h5>ID</h5>
+</div>
 
-      <article class="card team-card">
-        <img class="team-avatar" src="member6.jpg" alt="Member photo">
-        <h2>الاسم بالعربي</h2>
-        <p class="muted">Full Name</p>
-        <p><a href="mailto:email@uqu.edu.sa">University Email</a></p>
-        <p class="muted">ID</p>
-      </article>
+<!-- Member 6 -->
+<div class="card">
+<img src="member6.jpg" alt="Member Photo">
+<h2>الاسم بالعربي</h2>
+<h3>Full Name</h3>
+<h4>University Email</h4>
+<h5>ID</h5>
+</div>
 
-    </section>
-  </main>
+</section>
 
 </body>
 </html>
