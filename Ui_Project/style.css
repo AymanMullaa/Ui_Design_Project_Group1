@@ -203,17 +203,17 @@ thead th:last-child  { border-top-right-radius: 12px; }
 .topics-list-ar {
   max-width: 900px;
   margin: 40px auto;
-  padding-left: 22px; /* space for numbers */
+  padding-left: 22px;
   font-size: 1rem;
   line-height: 1.6;
+  list-style-position: inside;
 }
 
-/* IMPORTANT FIX: no huge padding-right */
 .topics-list li,
 .topics-list-dark li,
 .topics-list-ar li {
   width: 100%;
-  display: block;
+  display: list-item;
   margin-bottom: 12px;
   padding: 15px 20px;
   border-radius: 12px;
@@ -221,11 +221,6 @@ thead th:last-child  { border-top-right-radius: 12px; }
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   overflow-wrap: anywhere;
 }
-
-.topics-list li,
-.topics-list-ar li { color: #080808; }
-
-.topics-list-dark li { color: #ffffff; }
 
 /* =========================
    11) REFERENCES SECTION
